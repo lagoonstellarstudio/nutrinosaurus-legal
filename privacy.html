@@ -34,6 +34,11 @@
             margin-top: 30px; 
             font-size: 1.3em;
         }
+        h3 {
+            color: #E0C068;
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
         ul { color: #B0B0B0; padding-left: 20px; }
         li { margin-bottom: 8px; }
         .date { color: #D4AF37; font-style: italic; font-size: 0.9em; margin-bottom: 25px; }
@@ -47,35 +52,302 @@
         }
         a { color: #D4AF37; text-decoration: none; font-weight: 600; }
         a:hover { text-decoration: underline; }
+        .info-box {
+            background-color: rgba(212, 175, 55, 0.08);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            padding: 15px;
+            margin-top: 10px;
+        }
+        .info-title { color: #D4AF37; font-weight: bold; display: block; margin-bottom: 5px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: rgba(212, 175, 55, 0.1);
+            color: #D4AF37;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Politique de Confidentialité</h1>
-        <p class="date">Dernière mise à jour : 31 juillet 2026</p>
+        <p class="date">Dernière mise à jour : 8 août 2026</p>
         
-        <h2>1. Données collectées</h2>
+        <h2>1. Introduction</h2>
+        <p>Chez Lagoon Stellar Studio, la protection de vos données personnelles est une priorité. Cette politique explique quelles données nous collectons, pourquoi, et comment nous les protégeons, conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés.</p>
+
+        <h2>2. Données collectées</h2>
+        <p>Pour vous fournir nos services, nous collectons les données suivantes :</p>
+
+        <h3>2.1 Données d'identification (obligatoires)</h3>
+        <table>
+            <tr>
+                <th>Donnée</th>
+                <th>Finalité</th>
+                <th>Durée de conservation</th>
+            </tr>
+            <tr>
+                <td>Adresse email</td>
+                <td>Création de compte, authentification, emails transactionnels, newsletter (avec consentement)</td>
+                <td>Tant que le compte est actif</td>
+            </tr>
+            <tr>
+                <td>Nom ou pseudonyme</td>
+                <td>Personnalisation de l'expérience</td>
+                <td>Tant que le compte est actif</td>
+            </tr>
+            <tr>
+                <td>Mot de passe</td>
+                <td>Authentification sécurisée (hashé BCrypt, jamais stocké en clair)</td>
+                <td>Tant que le compte est actif</td>
+            </tr>
+        </table>
+
+        <h3>2.2 Données d'utilisation</h3>
+        <table>
+            <tr>
+                <th>Donnée</th>
+                <th>Finalité</th>
+                <th>Durée de conservation</th>
+            </tr>
+            <tr>
+                <td>Historique des générations</td>
+                <td>Amélioration du service, personnalisation</td>
+                <td>Tant que le compte est actif</td>
+            </tr>
+            <tr>
+                <td>Solde de crédits</td>
+                <td>Gestion des achats et consommations</td>
+                <td>Tant que le compte est actif</td>
+            </tr>
+            <tr>
+                <td>Historique de consommation</td>
+                <td>Facturation, support client</td>
+                <td>10 ans (obligation comptable)</td>
+            </tr>
+            <tr>
+                <td>Préférences de consentement</td>
+                <td>Respect de vos choix (statistiques, partage, IA)</td>
+                <td>Tant que le compte est actif</td>
+            </tr>
+        </table>
+
+        <h3>2.3 Données techniques</h3>
+        <table>
+            <tr>
+                <th>Donnée</th>
+                <th>Finalité</th>
+                <th>Durée de conservation</th>
+            </tr>
+            <tr>
+                <td>Adresse IP</td>
+                <td>Sécurité, prévention de la fraude</td>
+                <td>Logs serveurs Google Cloud, purgés automatiquement</td>
+            </tr>
+            <tr>
+                <td>Type d'appareil</td>
+                <td>Compatibilité technique</td>
+                <td>Non stocké (transmis uniquement en mémoire)</td>
+            </tr>
+        </table>
+
+        <h2>3. Données NON collectées</h2>
         <ul>
-            <li>Identifiant anonyme (Google Play ID / Apple ID)</li>
-            <li>Historique des générations (recette source, style, régime, résultat)</li>
-            <li>Solde de crédits et consommations</li>
-            <li>Adresse IP (anonymisée après 30 jours)</li>
+            <li>❌ Aucune donnée bancaire : les paiements sont intégralement gérés par Google Play / App Store</li>
+            <li>❌ Aucune donnée de géolocalisation précise</li>
+            <li>❌ Aucun accès à votre carnet de contacts</li>
+            <li>❌ Aucun accès à vos photos ou fichiers personnels</li>
+            <li>❌ Aucun suivi publicitaire tiers</li>
         </ul>
 
-        <h2>2. Données NON collectées</h2>
+        <h2>4. Finalités du traitement</h2>
         <ul>
-            <li>Aucun nom, email ou mot de passe personnel</li>
-            <li>Aucune donnée bancaire (les paiements sont intégralement gérés et sécurisés par Google Play ou l'App Store)</li>
+            <li><strong>Création et gestion de votre compte</strong> : inscription, authentification, réinitialisation de mot de passe</li>
+            <li><strong>Fourniture du service</strong> : génération de recettes IA, analyse nutritionnelle, consultation des recettes</li>
+            <li><strong>Gestion des crédits et abonnements</strong> : suivi des achats, consommation, retries gratuits</li>
+            <li><strong>Communication transactionnelle</strong> : emails de vérification, notifications importantes</li>
+            <li><strong>Newsletter</strong> : uniquement avec votre consentement explicite (désinscription en 1 clic)</li>
+            <li><strong>Amélioration du service</strong> : statistiques anonymes (avec votre consentement)</li>
+            <li><strong>Sécurité</strong> : prévention de la fraude, détection d'abus</li>
+            <li><strong>Support client</strong> : réponse à vos demandes</li>
         </ul>
 
-        <h2>3. Base légale et finalité</h2>
-        <p>Le traitement de vos données est nécessaire à l'exécution du contrat (Conditions Générales d'Utilisation) pour vous fournir le service de génération de recettes et d'analyse nutritionnelle. Les statistiques anonymes sont traitées sur la base de votre consentement explicite.</p>
+        <h2>5. Base légale</h2>
+        <table>
+            <tr>
+                <th>Traitement</th>
+                <th>Base légale</th>
+            </tr>
+            <tr>
+                <td>Compte, crédits, générations</td>
+                <td>Exécution du contrat (CGU)</td>
+            </tr>
+            <tr>
+                <td>Statistiques, partage recettes, amélioration IA</td>
+                <td>Consentement explicite (retirable à tout moment)</td>
+            </tr>
+            <tr>
+                <td>Sécurité, prévention fraude</td>
+                <td>Intérêt légitime</td>
+            </tr>
+            <tr>
+                <td>Newsletter</td>
+                <td>Consentement explicite</td>
+            </tr>
+        </table>
 
-        <h2>4. Vos droits (RGPD)</h2>
-        <p>Conformément au Règlement Général sur la Protection des Données, vous disposez d'un droit d'accès, de rectification et d'effacement de vos données. Pour l'exercer, contactez-nous à : <a href="mailto:contact@lagoonstellarstudio.fr">contact@lagoonstellarstudio.fr</a>.</p>
+        <h2>6. Partage avec des tiers</h2>
+        <p>Vos données peuvent être transmises aux prestataires suivants, tous soumis au RGPD :</p>
+        <table>
+            <tr>
+                <th>Prestataire</th>
+                <th>Finalité</th>
+                <th>Localisation</th>
+            </tr>
+            <tr>
+                <td>Google Cloud Platform</td>
+                <td>Hébergement des données et infrastructure</td>
+                <td>Union Européenne</td>
+            </tr>
+            <tr>
+                <td>Google Play Store / Apple App Store</td>
+                <td>Traitement exclusif des paiements in-app</td>
+                <td>UE / USA (certifiés Privacy Framework)</td>
+            </tr>
+            <tr>
+                <td>Brevo (ex-Sendinblue)</td>
+                <td>Envoi d'emails transactionnels et newsletter</td>
+                <td>France 🇫🇷</td>
+            </tr>
+        </table>
+        <div class="info-box">
+            <span class="info-title">🔒 Confidentialité garantie :</span>
+            <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #B0B0B0;">
+                <li>Nous n'avons <strong>jamais accès</strong> à vos données bancaires</li>
+                <li>Vos mots de passe sont hashés (BCrypt), jamais stockés en clair</li>
+                <li>Vos données ne sont <strong>jamais vendues</strong> à des tiers</li>
+                <li>Aucun transfert hors UE sauf prestataires certifiés</li>
+            </ul>
+        </div>
 
-        <h2>5. Hébergement</h2>
-        <p>Vos données sont hébergées de manière sécurisée au sein de l'Union Européenne (Google Cloud Platform).</p>
+        <h2>7. Vos consentements</h2>
+        <p>Lors de l'inscription et à tout moment dans les paramètres, vous pouvez choisir :</p>
+        <ul>
+            <li><strong>📊 Statistiques anonymes</strong> : aider à améliorer l'app (aucune donnée personnelle)</li>
+            <li><strong>🌟 Partage de recettes</strong> : rendre vos créations visibles à la communauté</li>
+            <li><strong>✨ Amélioration de l'IA</strong> : autoriser l'utilisation anonyme de vos recettes pour améliorer le modèle</li>
+        </ul>
+        <p>Ces consentements sont :</p>
+        <ul>
+            <li>✅ Optionnels (l'app fonctionne sans)</li>
+            <li>✅ Modifiables à tout moment dans votre profil</li>
+            <li>✅ Retirables sans conséquence sur votre compte</li>
+        </ul>
+
+        <h2>8. Vos droits (RGPD)</h2>
+        <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+        <ul>
+            <li><strong>🔍 Droit d'accès</strong> : obtenir une copie de vos données</li>
+            <li><strong>✏️ Droit de rectification</strong> : corriger vos données inexactes</li>
+            <li><strong>🗑️ Droit à l'effacement</strong> : supprimer votre compte et toutes vos données</li>
+            <li><strong>📦 Droit à la portabilité</strong> : récupérer vos données dans un format structuré (JSON/CSV)</li>
+            <li><strong>⛔ Droit d'opposition</strong> : vous opposer à certains traitements</li>
+            <li><strong>🔄 Droit de retrait du consentement</strong> : à tout moment, sans affecter le passé</li>
+        </ul>
+        
+        <p>Pour exercer ces droits : <a href="mailto:contact@lagoonstellarstudio.fr">contact@lagoonstellarstudio.fr</a></p>
+        
+        <p>Vous pouvez également introduire une réclamation auprès de la CNIL : <a href="https://www.cnil.fr" target="_blank">www.cnil.fr</a></p>
+
+        <h2>9. Sécurité des données</h2>
+        <p>Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles :</p>
+        <ul>
+            <li>🔐 Chiffrement de toutes les communications (HTTPS/TLS 1.3)</li>
+            <li>🔐 Chiffrement des données au repos (AES-256 via Google Cloud)</li>
+            <li>🔐 Mots de passe hashés avec BCrypt (algorithme adaptatif)</li>
+            <li>🔐 Authentification JWT avec refresh tokens</li>
+            <li>🔐 Accès restreint aux données (principe du moindre privilège)</li>
+            <li>🔐 Sauvegardes régulières et chiffrées</li>
+            <li>🔐 Hébergement dans l'Union Européenne</li>
+        </ul>
+
+        <h2>10. Cookies et traceurs</h2>
+        <p>Notre application mobile n'utilise <strong>pas de cookies</strong>. Nous utilisons uniquement :</p>
+        <ul>
+            <li>Des tokens d'authentification sécurisés (JWT)</li>
+            <li>Un stockage local chiffré pour vos préférences</li>
+        </ul>
+        <p>Aucun traceur publicitaire tiers n'est présent dans l'application.</p>
+
+        <h2>11. Durée de conservation</h2>
+        <table>
+            <tr>
+                <th>Type de donnée</th>
+                <th>Durée</th>
+            </tr>
+            <tr>
+                <td>Compte actif</td>
+                <td>Tant que le compte existe</td>
+            </tr>
+            <tr>
+                <td>Compte supprimé</td>
+                <td>Désactivé 30 jours, puis anonymisé</td>
+            </tr>
+            <tr>
+                <td>Adresse IP</td>
+                <td>Purgée automatiquement par Google Cloud</td>
+            </tr>
+            <tr>
+                <td>Historique de facturation</td>
+                <td>10 ans (obligation comptable française)</td>
+            </tr>
+        </table>
+
+        <h2>12. Suppression de votre compte</h2>
+        <p>Vous pouvez demander la suppression de votre compte à tout moment depuis les paramètres de l'application :</p>
+        <ol>
+            <li><strong>Désactivation immédiate</strong> : votre compte devient inaccessible</li>
+            <li><strong>Délai de sécurité (30 jours)</strong> : en cas de demande accidentelle</li>
+            <li><strong>Purge définitive</strong> : après 30 jours, vos données personnelles sont anonymisées</li>
+        </ol>
+        
+        <div class="info-box">
+            <span class="info-title">📋 Données après purge définitive :</span>
+            <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #B0B0B0;">
+                <li>❌ <strong>Anonymisées</strong> : email, nom, mot de passe, recettes favorites, recettes personnelles, crédits</li>
+                <li>✅ <strong>Conservées</strong> : historique de facturation uniquement (obligation légale)</li>
+            </ul>
+        </div>
+
+        <h2>13. Mineurs</h2>
+        <p>L'application est destinée aux utilisateurs de <strong>13 ans et plus</strong>. Pour les utilisateurs de 13 à 18 ans, le consentement parental est requis pour la collecte de données. Si vous pensez qu'un mineur a utilisé le service sans autorisation, contactez-nous immédiatement.</p>
+
+        <h2>14. Transferts internationaux</h2>
+        <p>Vos données sont hébergées dans l'Union Européenne. Certains prestataires techniques (Google, Apple) peuvent traiter des données aux États-Unis. Dans ce cas, nous nous assurons qu'ils respectent les mécanismes de transfert appropriés (Clauses Contractuelles Types, certifications Privacy Framework).</p>
+
+        <h2>15. Modifications de la politique</h2>
+        <p>Nous nous réservons le droit de modifier la présente politique à tout moment. Toute modification substantielle vous sera notifiée :</p>
+        <ul>
+            <li>Par email (à l'adresse associée à votre compte)</li>
+            <li>Via une notification dans l'application</li>
+            <li>Avec un préavis minimum de 15 jours</li>
+        </ul>
+        <p>La date de mise à jour est indiquée en haut de ce document.</p>
+
+        <h2>16. Contact</h2>
+        <p>Pour toute question sur vos données personnelles :</p>
+        <ul>
+            <li>📧 Email : <a href="mailto:contact@lagoonstellarstudio.fr">contact@lagoonstellarstudio.fr</a></li>
+            <li>🏢 Adresse : 5 Rue de Joigny, 44100 Nantes, FRANCE</li>
+        </ul>
 
         <div class="footer">
             <p><strong>Lagoon Stellar Studio</strong> (Micro-entreprise)<br>
